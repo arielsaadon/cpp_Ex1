@@ -2,6 +2,6 @@
 
 #include <string>
 
-namespace ariel{
+namespace ariel {
     std::string snowman(int num);
-}
+};
