@@ -82,7 +82,7 @@ TEST_CASE("Right Arm change code") {
 	//Upwards Arm
     CHECK(nospaces(snowman(11111211)) == nospaces("_===_\n(.,.)/\n<( : )\n( : )"));
 	//Downwards Arm
-    CHECK(nospaces(snowman(11111311)) == nospaces("_===_\n(.,.)\n<( : )\\n( : )"));
+    CHECK(nospaces(snowman(11111311)) == nospaces("_===_\n(.,.)\n<( : )\\\n( : )"));
 	//None
     CHECK(nospaces(snowman(11111411)) == nospaces("_===_\n(.,.)\n<( : )\n( : )"));
 }
@@ -102,11 +102,11 @@ TEST_CASE("Base change code") {
 	//Buttons
 	CHECK(nospaces(snowman(11111111)) == nospaces("_===_\n(.,.)\n<( : )>\n( : )"));
 	//Feet
-    CHECK(nospaces(snowman(11111112)) == nospaces("_===_\n(.,.)\n<( : )>\n(" ")"));
+    CHECK(nospaces(snowman(11111112)) == nospaces("_===_\n(.,.)\n<( : )>\n(\" \")"));
 	//Flat
     CHECK(nospaces(snowman(11111113)) == nospaces("_===_\n(.,.)\n<( : )>\n(___)"));
 	//None
-    CHECK(nospaces(snowman(11111114)) == nospaces("_===_\n(.,.)\n<( : )>\n( : )"));
+    CHECK(nospaces(snowman(11111114)) == nospaces("_===_\n(.,.)\n<( : )>\n(   )"));
 }
 
 //Bad snowman code Tests
